@@ -27,7 +27,7 @@ public class ListingController {
 		return listingService.addListing(listing);
 	}
 	
-	@GetMapping("/Listings")
+	@GetMapping("/displayListing")
 	public List<Listing> displayListings(){
 		
 		return listingService.displayListings();
@@ -58,7 +58,7 @@ public class ListingController {
 		return listingService.sortListings();
 	}
 	
-	@PutMapping("/Listings")
+	@PutMapping("/UpdateListings")
 	public Listing updateListing(@RequestBody Listing listing) {
 		
 		return listingService.updateListing(listing);

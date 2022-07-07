@@ -33,7 +33,7 @@ public class UserServiceImpli implements UserService {
 	
 	public List<User_Entity> display()
 	{
-		List<User_Entity> list=(List<User_Entity> )userRepo.findAll();
+		List<User_Entity> list=userRepo.findAll();
 		return list;
 	}
 

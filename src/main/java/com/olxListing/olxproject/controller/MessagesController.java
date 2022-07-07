@@ -12,7 +12,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.olxListing.olxproject.entity.AdminMessages;
 import com.olxListing.olxproject.entity.CustomerMessages;
-import com.olxListing.olxproject.repository.CustomerMessagesRepo;
 import com.olxListing.olxproject.services.MessagesService;
 
 @RestController
@@ -37,7 +36,7 @@ public class MessagesController {
 		return messagesService.addMessages(cm);
 	}
 	
-	@PostMapping("/adminTOCustomerMessages")
+	@PostMapping("/adminToCustomerMessages")
 	public String addAdminMessages(@RequestBody AdminMessages am) {
 		return messagesService.addAdminMessages(am);
 	}

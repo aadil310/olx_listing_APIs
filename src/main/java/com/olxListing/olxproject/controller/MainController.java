@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-
 import org.springframework.web.bind.annotation.RestController;
-
 import com.olxListing.olxproject.entity.Bookmark;
 import com.olxListing.olxproject.entity.Listing;
 import com.olxListing.olxproject.entity.User_Entity;
@@ -35,7 +33,7 @@ public class MainController {
 		return userService.addBookmark(bookmark);
 	}
 	
-	@GetMapping("/register")
+	@GetMapping("/display")
 	public List<User_Entity> display()
 	{
 		return userService.display();
